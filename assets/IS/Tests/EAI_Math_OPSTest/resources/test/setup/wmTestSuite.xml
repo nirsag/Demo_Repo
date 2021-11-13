@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webMethodsTestSuite description="" name="newSampleTestSuite">
+    <webMethodsTestCase name="addition test case">
+        <service folder="EAI_Math_OPS.services" name="addNumbers">
+            <input>
+                <file filename="resources/test/data/addinp1.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/data/addout.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase name="mult test case">
+        <service folder="EAI_Math_OPS.services" name="multNumbers">
+            <input>
+                <file filename="resources/test/data/multinp.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/data/multout.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+</webMethodsTestSuite>
